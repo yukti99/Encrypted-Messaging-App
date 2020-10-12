@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/start_act"
+    android:background="@drawable/back_animation"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="412dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lock" />
+
+    <TextView
+        android:id="@+id/cht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="SafeChatApp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cht"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_btn"
+        android:gravity="center"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#fff" />
+
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_btn"
+        android:gravity="center"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="30dp"
+        android:text="AES-Encrypted SMS System, made by Yukti Khurana  "
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+
+
+
+</RelativeLayout>

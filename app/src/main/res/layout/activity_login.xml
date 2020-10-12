@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginicon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/icon"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            app:met_floatingLabel="normal"
+            android:hint="Email"/>        >
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            app:met_floatingLabel="normal"
+            android:hint="Password"/>
+        >
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/private_key"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            app:met_floatingLabel="normal"
+            android:hint="16-bit Encryption Key"/>
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btn_register"
+            android:background="@drawable/round_btn"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity = "center"
+            android:text="Forgot your password?"
+            android:layout_marginTop = "10dp"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:id="@+id/forgot_password"
+            android:textColor="@color/colorPrimaryDark"
+                   
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".Fragments.ProfileFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/prof_card"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id = "@+id/username"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email ID"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_below="@id/username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id = "@+id/email_id"
+                android:textSize="18dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Session Key"
+                android:layout_below="@id/email_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id = "@+id/session_key"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Share your Session Key with only the people you want to talk privately to!"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_below="@id/session_key"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:id = "@+id/disclaimer"
+                android:textSize="14dp"
+                android:layout_marginBottom="20dp"
+                />
+            <!--<Button
+                android:layout_width="250dp"
+                android:id="@+id/settings"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/disclaimer"
+                android:background="@drawable/round_btn"
+                android:layout_marginTop="20dp"
+                android:text="Settings"
+                android:layout_marginBottom="15dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                />
+                -->
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

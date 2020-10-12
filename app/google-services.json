@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "203108858143",
+    "firebase_url": "https://sms-encryption-d16c0.firebaseio.com",
+    "project_id": "sms-encryption-d16c0",
+    "storage_bucket": "sms-encryption-d16c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203108858143:android:c2e7fcbedf003f6b49982a",
+        "android_client_info": {
+          "package_name": "com.example.mychatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203108858143-cku1t1pem803p25if6gm8aid4ukk8u7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mychatapp",
+            "certificate_hash": "591278c0443fa5c15db4dc732a9cff17d0cda6bb"
+          }
+        },
+        {
+          "client_id": "203108858143-td01jgs3dou0u6v1efrai1eaqkl16m3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCskbNj3AhKJZwHzbo1RULOLUsYfxLxYRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203108858143-td01jgs3dou0u6v1efrai1eaqkl16m3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
